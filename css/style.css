@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1407px;
+    margin: 0 auto;
+}
+
+/* ===========================
+    nav part start
+============================== */
+
+nav{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav .box{
+    display: flex;
+}
+
+nav .logo{
+    width: 20%;
+}
+
+nav .nav-item {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-item ul{
+    display: flex;
+    column-gap: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav .nav-item ul li i{
+    margin-left: 14px;
+}
+
+nav .button{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .button a{
+    display: inline-block;
+    background: #FF5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 18px;
+}
+
+/* ===========================
+    nav part end
+============================== */
+
+/* ===========================
+    banner part start
+============================== */
+
+.banner{
+    background: url(../images/banner.png);
+   padding: 200px 0;
+   position: relative;
+}
+
+.banner .round-shape {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #FFABBA;
+    border-radius: 50%;
+    position: absolute;
+    top: 86px;
+    left: 788px;
+    animation: rotate 4s infinite linear;
+}
+
+.banner .round-shape .inner-shape{
+    width: 20px;
+    height: 20px;
+    background: #FFABBA;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 9px;
+    
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+
+    }
+}
+
+
+.banner .dot {
+    width: 20px;
+    height: 20px;
+    background: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 149px;
+    right: 800px;
+    animation: tb 2s infinite linear alternate;
+}
+
+
+@keyframes tb{
+    from{
+        transform: translateY(-50px);
+    }to{
+        transform: translateY(0);
+    }
+}
+
+
+.banner .cross {
+    color: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 225px;
+    left: 565px;
+    animation: rotate 4s infinite linear;
+}
+
+.banner .cross2 {
+    color: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 225px;
+    right: 565px;
+    animation: rotate 4s infinite linear;
+}
+
+
+.banner h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: #29313D;
+    width: 771px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 130%;
+    text-transform: capitalize;
+}
+
+.banner p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 547px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 44px;
+}
+
+.banner .button{
+    text-align: center;
+}
+
+.banner .button a{
+    display: inline-block;
+    background: #FF5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 18px;
+    margin: 0 12px;
+    border: 1px solid transparent;
+    transition: .4s;
+}
+
+.banner .button a:hover{
+    background: transparent;
+    color: #FF5538;
+    border-color: #FF5538;
+}
+
+/* ===========================
+    banner part end
+============================== */
+
