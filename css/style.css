@@ -16,6 +16,25 @@ a{
     margin: 0 auto;
 }
 
+.title h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FF5538;
+    text-transform: capitalize;
+}
+
+.title h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #29313D;
+    text-transform: capitalize;
+    width: 449px;
+    line-height: 140%;
+    margin-top: 10px;
+}
+
 /* ===========================
     nav part start
 ============================== */
@@ -206,6 +225,7 @@ nav .button a{
     border-color: #FF5538;
 }
 
+
 /* ===========================
     banner part end
 ============================== */
@@ -237,7 +257,10 @@ nav .button a{
     color: #29313D;
     margin-top: 34px;
     margin-bottom: 16px;
+
 }
+
+
 
 .service .item p{
     font-family: 'Nunito', sans-serif;
@@ -246,7 +269,59 @@ nav .button a{
     color: #29313D;
 }
 
+
 /* ===========================
     service part end
+============================== */
+
+
+/* ===========================
+    digitallife part start
+============================== */
+
+.digitallife .box{
+    display: flex;
+}
+
+.digitallife .left{
+    width: 50%;
+}
+
+
+.digitallife .left img{
+    position: relative;
+    top: 40px;
+    right: 0;
+    width: 110%;
+}
+
+.digitallife .right{
+    width: 50%;
+    background: url(../images/digitallifebg.png) no-repeat;
+    background-size: cover;
+    padding: 100px 185px;
+}
+
+.digitallife .right h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #29313D;
+    width: 570px;
+  
+}
+
+.digitallife .right p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #29313D;
+    width: 501px;
+    line-height: 200%;
+    margin-top: 20px;
+}
+
+/* ===========================
+    digitallife part end
 ============================== */
 
