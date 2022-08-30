@@ -1,95 +1,96 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-ul,ol{
-    list-style: none;
+ul,
+ol {
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.container{
-    width: 1407px;
-    margin: 0 auto;
+.container {
+  width: 1407px;
+  margin: 0 auto;
 }
 
-.title h4{
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #FF5538;
-    text-transform: capitalize;
+.title h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ff5538;
+  text-transform: capitalize;
 }
 
-.title h2{
-    font-family: 'Poppins', sans-serif;
-    font-size: 48px;
-    font-weight: 600;
-    color: #29313D;
-    text-transform: capitalize;
-    width: 449px;
-    line-height: 140%;
-    margin-top: 10px;
+.title h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #29313d;
+  text-transform: capitalize;
+  width: 449px;
+  line-height: 140%;
+  margin-top: 10px;
 }
 
 /* ===========================
     nav part start
 ============================== */
 
-nav{
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    top: 0;
-    left: 0;
+nav {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
-nav .box{
-    display: flex;
+nav .box {
+  display: flex;
 }
 
-nav .logo{
-    width: 20%;
+nav .logo {
+  width: 20%;
 }
 
 nav .nav-item {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-nav .nav-item ul{
-    display: flex;
-    column-gap: 50px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
+nav .nav-item ul {
+  display: flex;
+  column-gap: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-nav .nav-item ul li i{
-    margin-left: 14px;
+nav .nav-item ul li i {
+  margin-left: 14px;
 }
 
-nav .button{
-    width: 20%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+nav .button {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-nav .button a{
-    display: inline-block;
-    background: #FF5538;
-    padding: 14px 28px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
-    border-radius: 18px;
+nav .button a {
+  display: inline-block;
+  background: #ff5538;
+  padding: 14px 28px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 18px;
 }
 
 /* ===========================
@@ -100,131 +101,126 @@ nav .button a{
     banner part start
 ============================== */
 
-.banner{
-    background: url(../images/banner.png);
-   padding: 300px 0;
-   position: relative;
+.banner {
+  background: url(../images/banner.png);
+  padding: 300px 0;
+  position: relative;
 }
 
 .banner .round-shape {
-    width: 100px;
-    height: 100px;
-    border: 1px solid #FFABBA;
-    border-radius: 50%;
-    position: absolute;
-    top: 133px;
-    left: 788px;
-    animation: rotate 4s infinite linear;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ffabba;
+  border-radius: 50%;
+  position: absolute;
+  top: 133px;
+  left: 788px;
+  animation: rotate 4s infinite linear;
 }
 
-.banner .round-shape .inner-shape{
-    width: 20px;
-    height: 20px;
-    background: #FFABBA;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 0;
-    left: 9px;
-    
+.banner .round-shape .inner-shape {
+  width: 20px;
+  height: 20px;
+  background: #ffabba;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 9px;
 }
 
-@keyframes rotate{
-    from{
-        transform: rotate(0);
-    }to{
-        transform: rotate(360deg);
-
-    }
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
 
 .banner .dot {
-    width: 20px;
-    height: 20px;
-    background: #C087EE;
-    border-radius: 50%;
-    position: absolute;
-    top: 149px;
-    right: 800px;
-    animation: tb 2s infinite linear alternate;
+  width: 20px;
+  height: 20px;
+  background: #c087ee;
+  border-radius: 50%;
+  position: absolute;
+  top: 149px;
+  right: 800px;
+  animation: tb 2s infinite linear alternate;
 }
 
-
-@keyframes tb{
-    from{
-        transform: translateY(-50px);
-    }to{
-        transform: translateY(0);
-    }
+@keyframes tb {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
-
 
 .banner .cross {
-    color: #C087EE;
-    border-radius: 50%;
-    position: absolute;
-    top: 225px;
-    left: 565px;
-    animation: rotate 4s infinite linear;
+  color: #c087ee;
+  border-radius: 50%;
+  position: absolute;
+  top: 225px;
+  left: 565px;
+  animation: rotate 4s infinite linear;
 }
 
 .banner .cross2 {
-    color: #C087EE;
-    border-radius: 50%;
-    position: absolute;
-    top: 225px;
-    right: 565px;
-    animation: rotate 4s infinite linear;
+  color: #c087ee;
+  border-radius: 50%;
+  position: absolute;
+  top: 225px;
+  right: 565px;
+  animation: rotate 4s infinite linear;
 }
 
-
-.banner h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 64px;
-    font-weight: 700;
-    color: #29313D;
-    width: 771px;
-    text-align: center;
-    margin: 0 auto;
-    line-height: 130%;
-    text-transform: capitalize;
+.banner h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: #29313d;
+  width: 771px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 130%;
+  text-transform: capitalize;
 }
 
-.banner p{
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    width: 547px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 24px;
-    margin-bottom: 44px;
+.banner p {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  width: 547px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 44px;
 }
 
-.banner .button{
-    text-align: center;
+.banner .button {
+  text-align: center;
 }
 
-.banner .button a{
-    display: inline-block;
-    background: #FF5538;
-    padding: 14px 28px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
-    border-radius: 18px;
-    margin: 0 12px;
-    border: 1px solid transparent;
-    transition: .4s;
+.banner .button a {
+  display: inline-block;
+  background: #ff5538;
+  padding: 14px 28px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 18px;
+  margin: 0 12px;
+  border: 1px solid transparent;
+  transition: 0.4s;
 }
 
-.banner .button a:hover{
-    background: transparent;
-    color: #FF5538;
-    border-color: #FF5538;
+.banner .button a:hover {
+  background: transparent;
+  color: #ff5538;
+  border-color: #ff5538;
 }
-
 
 /* ===========================
     banner part end
@@ -234,94 +230,327 @@ nav .button a{
     service part start
 ============================== */
 
-.service .box{
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
+.service .box {
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
 }
 
-.service .item{
-    width: 32%;
-    background: #fff;
-    -webkit-box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);
-    box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);
-    padding: 30px 40px;
-    box-sizing: border-box;
+.service .item {
+  width: 32%;
+  background: #fff;
+  -webkit-box-shadow: 0px 7px 82px -6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 7px 82px -6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 7px 82px -6px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  box-sizing: border-box;
 }
 
-.service .item h3{
-    font-family: 'Poppins', sans-serif;
-    font-size: 28px;
-    font-weight: 600;
-    color: #29313D;
-    margin-top: 34px;
-    margin-bottom: 16px;
-
+.service .item h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #29313d;
+  margin-top: 34px;
+  margin-bottom: 16px;
 }
 
-
-
-.service .item p{
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #29313D;
+.service .item p {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
 }
-
 
 /* ===========================
     service part end
 ============================== */
 
-
 /* ===========================
     digitallife part start
 ============================== */
 
-.digitallife .box{
-    display: flex;
+.digitallife .box {
+  display: flex;
 }
 
-.digitallife .left{
-    width: 50%;
+.digitallife .left {
+  width: 50%;
 }
 
-
-.digitallife .left img{
-    position: relative;
-    top: 40px;
-    right: 0;
-    width: 110%;
+.digitallife .left img {
+  position: relative;
+  top: 40px;
+  right: 0;
+  width: 110%;
 }
 
-.digitallife .right{
-    width: 50%;
-    background: url(../images/digitallifebg.png) no-repeat;
-    background-size: cover;
-    padding: 100px 185px;
+.digitallife .right {
+  width: 50%;
+  background: url(../images/digitallifebg.png) no-repeat;
+  background-size: cover;
+  padding: 100px 185px;
 }
 
-.digitallife .right h3{
-    font-family: 'Poppins', sans-serif;
-    font-size: 36px;
-    font-weight: 600;
-    color: #29313D;
-    width: 570px;
-  
+.digitallife .right h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #29313d;
+  width: 570px;
 }
 
-.digitallife .right p{
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #29313D;
-    width: 501px;
-    line-height: 200%;
-    margin-top: 20px;
+.digitallife .right p {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
+  width: 501px;
+  line-height: 200%;
+  margin-top: 20px;
 }
 
 /* ===========================
     digitallife part end
 ============================== */
 
+/* ===========================
+    work part start
+============================== */
+
+.work {
+  margin-top: 120px;
+}
+
+.work .box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work .box .text {
+  width: 80%;
+}
+
+.work .box .text .title h2 {
+  width: 693px;
+  margin-bottom: 60px;
+}
+
+.work .box .button {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.work .button a {
+  display: inline-block;
+  background: transparent;
+  padding: 14px 28px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff5538;
+  border-radius: 18px;
+  margin: 0 12px;
+  border: 1px solid #ff5538;
+  transition: 0.4s;
+}
+
+.work .button a:hover {
+  background: #ff5538;
+  color: #fff;
+  border-color: transparent;
+}
+
+.work .small-item {
+  width: 40%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.work .large-item {
+  width: 58%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.work img {
+  width: 100%;
+  height: 332px;
+}
+
+.work .text-box {
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -123px;
+  left: 0;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.work .small-item:hover .text-box {
+  bottom: 0;
+  opacity: 1;
+}
+
+.work .large-item:hover .text-box {
+  bottom: 0;
+  opacity: 1;
+}
+
+.work .text-box h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #29313d;
+}
+
+.work .text-box a {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff5538;
+  display: inline-block;
+}
+
+/* ===========================
+    work part end
+============================== */
+
+/* ===========================
+    counting part start
+============================== */
+.counting {
+  background: url(../images/countingbg.png) no-repeat center;
+  background-size: cover;
+  padding: 120px 0;
+  margin-top: 120px;
+}
+
+.counting .box {
+  display: flex;
+}
+
+.counting .count {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.counting .count .item {
+  width: 47%;
+  background: #fff;
+  text-align: center;
+  padding: 74px 0;
+}
+
+.counting .count .item h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.counting .count .item p {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.counting .details {
+  width: 50%;
+  padding-left: 100px;
+  box-sizing: border-box;
+}
+
+.counting .details .title h2 {
+  width: 552px;
+}
+
+.counting .details p {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 200%;
+  width: 524px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+/* ===========================
+    counting part end
+============================== */
+/* ===========================
+    global part start
+============================== */
+.global {
+  margin-top: 120px;
+}
+.global .title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.global .title h2 {
+  width: 849px;
+  margin: 0 auto;
+}
+
+.global .box {
+  display: flex;
+  justify-content: space-between;
+}
+/* ===========================
+    global part end
+============================== */
+/* ===========================
+    customer part end
+============================== */
+.customer {
+  background: url(../images/customer.png) no-repeat center;
+  background-size: cover;
+  padding: 139px 0;
+  margin-top: 120px;
+}
+
+.customer .box {
+  display: flex;
+}
+
+.customer .details {
+  width: 50%;
+}
+
+.customer .imgbox {
+  display: flex;
+  column-gap: 28px;
+  margin-top: 60px;
+}
+
+.customer .details p {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 180%;
+  margin: 60px 0;
+}
+
+.customer .details h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.customer .img {
+  width: 50%;
+  text-align: center;
+}
+/* ===========================
+    customer part end
+============================== */
